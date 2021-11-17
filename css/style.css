@@ -1,0 +1,147 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+.mt-5{
+  margin-top: 5rem;
+}
+.text-center{
+  text-align: center;
+}
+.text-light{
+  color: #505050;
+}
+.text-lighter{
+  color: #adadad;
+}
+.heading-sec h2{
+  color:RGB(89, 98 , 177);
+}
+
+.form {
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.form-field {
+  display: flex;
+  margin: 0 0 1rem 0;
+}
+.form-label, input {
+  width: 40%;
+  padding: 4px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.form-label {
+  text-align: right;
+  margin-right: 35px;
+  width: 30%;
+  font-weight: bold;
+  color: RGB(90, 114 , 140);
+}
+input {
+  text-align: center;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+}
+
+input[type=number]:focus{
+  border: 2px solid #63b3ed;
+}
+input[type=number]:focus-visible {
+  outline: none;
+}
+
+
+.btn-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.btn-img{
+  width: 45px;
+}
+.btn-default{
+  margin: 5px;
+  padding: 0 25px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #dedede;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px 0 rgb(122 122 122 / 30%), 0 2px 8px 5px rgb(122 122 122 / 15%)
+}
+
+
+
+.calc-wrapper{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* white-space: nowrap; */
+}
+
+.card-wrapper{
+  width: 10%;
+}
+.optional-divs{
+  width: 40%;
+}
+
+.calc-prog-wrapper{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.calc-label{
+  text-align: right;
+  margin-right: 20px;
+  width: 38%;
+  font-weight: bold;
+}
+.lifetime-label{
+  text-transform: uppercase;
+}
+
+
+progress {
+  border-radius: 5px; 
+  height: 13px;
+}
+progress::-webkit-progress-bar {
+  background-color: transparent;
+  border-radius: 5px;
+}
+progress::-webkit-progress-value {
+  background-color: rgb(183, 209 , 227);
+  border-radius: 5px;
+}
+
+#unlimited-bar::-webkit-progress-value{
+  background-color:rgb(187, 212 , 229)
+}
+
+#lifetime-bar::-webkit-progress-value{
+  background-color: rgb(1, 139 , 229);
+}
+
+.calc-prog-wrapper span{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
