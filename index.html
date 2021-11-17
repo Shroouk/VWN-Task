@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Virtual Worker Now </title>
+
+    <link rel="icon" type="image/svg" href="./imgs/logo.png">
+   
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <main>
+      <div class="heading-sec text-center">
+        <h2>Calculate Your Rewards</h2>
+      </div>
+
+      <div class="form-wrapper">
+        <form method="post" action="/" id="form" class="form validate" onsubmit="return mySubmitFunction(event)">
+          <div class="form-field">
+            <label for="vendor" class="form-label">Vendor/Bills</label>
+            <input type="number" class="form-input" name="vendor" id="vendor" placeholder="Enter a number" required />
+          </div>
+          <div class="form-field">
+            <label for="media" class="form-label">Media/Ad Spend</label>
+            <input type="number" class="form-input" name="media" id="media" placeholder="Enter a number" required />
+          </div>
+          <div class="form-field">
+            <label for="corp" class="form-label">Corp.Spend</label>
+            <input type="number" class="form-input" name="corp" id="corp" placeholder="Enter a number" required />
+          </div>
+          <div class="form-field">
+            <label for="team" class="form-label">Team Project</label>
+            <input type="number" class="form-input" name="team" id="team" placeholder="Enter a number" required />
+          </div>
+
+          <div class="heading-sec text-center mt-5">
+            <h2>Compare your Rewards</h2>
+          </div>
+    
+          <div class="btn-wrapper">
+            <button type="submit" class="btn-default brex-btn" id="btn1" onclick="toggleVisibility('Div1');"><img class="btn-img" src="./imgs/brex.png"></button>
+            <button type="submit" class="btn-default stripe-btn" id="btn2" onclick= "toggleVisibility('Div2');"><img class="btn-img" src="./imgs/stripe.png"></button>
+            <button type="submit" class="btn-default stripe-btn" id="btn3" onclick= "toggleVisibility('Div3');"><img class="btn-img" src="./imgs/amex.png"></button>
+          </div>
+
+        </form>
+      </div>
+
+      <div>
+
+     
+
+
+      <div class="calc-wrapper">
+        <div class="card-wrapper">
+          <img src="./imgs/card.PNG" alt="card-img" width="175px">
+        </div>
+        <div class="optional-divs">
+          <!-- optional divs  -->
+          <div class="calc-prog-wrapper branded-calc" id="Div1" style="display:none;">
+            <label class="calc-label branded-label text-lighter">Brex Business Card</label>
+            <progress class="calc-progress optional-calc" id="brex-bar" value="100" max="100">  </progress>
+            <span class="branded text-lighter" id="brex-result"></span>
+          </div>
+          <div class="calc-prog-wrapper branded-calc" id="Div2" style="display:none;" >
+            <label class="calc-label branded-label text-lighter">Stripe Business Card</label>
+            <progress class="calc-progress optional-calc" id="stripe-bar" value="100" max="100">  </progress>
+            <span class="branded text-lighter" id="stripe-result"></span>
+          </div>
+          <div class="calc-prog-wrapper branded-calc" id="Div3" style="display:none;">
+            <label class="calc-label branded-label text-lighter">Amex Business Card </label>
+            <progress class="calc-progress optional-calc" id="amex-bar" value="100" max="100">  </progress>
+            <span class="branded text-lighter" id="amex-result"></span>
+          </div>
+
+          <div class="calc-prog-wrapper">
+            <label class="calc-label unlimited-label text-lighter">Unlimited Rewards</label>
+            <progress class="calc-progress automatically-calc" id="unlimited-bar" value="100" max="100" >  </progress>
+            <span class="unlimited-result text-lighter" id="unlimited-result"></span>
+          </div>
+          <div class="calc-prog-wrapper">
+            <label class="calc-label lifetime-label text-light">lifetime rewards</label>
+            <progress class="calc-progress automatically-calc" id="lifetime-bar" value="100" max="100">  </progress>
+            <span class="lifetime-rewards text-light" id="lifetime-rewards"></span>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+    </main>
+   
+
+
+  <script src="./js/main.js"></script>
+
+  </body>
+</html>
